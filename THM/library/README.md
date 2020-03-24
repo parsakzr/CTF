@@ -5,10 +5,12 @@ port 80 open, so let's check it.
   * View page source :
   * on nmap resaults: *http-robots.txt: 1 disallowed entry*
 
-Every link has a href to homepage '<a href="#">' --> xss is not a good choice
+Every link has a href to homepage \<a href=\"#\"\> --> xss is not a good choice
 
 lets find other dirs:
+
 > dirb http://$TARGET /usr/share/wordlists/dirb/common.txt
+
 found 3 resaults:
 '''
 	==> DIRECTORY: http://10.10.42.55/images/                                                          
@@ -45,7 +47,7 @@ lets ls the home dir of meliodas
 '''
 we have the user flag.
 
-# Root flag
+### Root flag
 
 let's see what bak.py does;
 It backups the whole website in /var/backups
@@ -66,5 +68,6 @@ pty.spawn("/bin/sh")
 
 '''
 now if we run it we have a root tty and we can read root flag
-> # cat /root/root.txt
+> cat /root/root.txt
+
 e8c8c6c256c35515d1d344ee0488c617
