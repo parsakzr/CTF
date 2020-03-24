@@ -1,0 +1,62 @@
+root@pali:~# dirb http://10.10.136.28
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Tue Mar 24 14:24:40 2020
+URL_BASE: http://10.10.136.28/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: http://10.10.136.28/ ----
+==> DIRECTORY: http://10.10.136.28/0/                                                              
+==> DIRECTORY: http://10.10.136.28/admin/                                                          
++ http://10.10.136.28/atom (CODE:301|SIZE:0)                                                       
+==> DIRECTORY: http://10.10.136.28/audio/                                                          
+==> DIRECTORY: http://10.10.136.28/blog/                                                           
+==> DIRECTORY: http://10.10.136.28/css/                                                            
++ http://10.10.136.28/dashboard (CODE:302|SIZE:0)                                                  
++ http://10.10.136.28/favicon.ico (CODE:200|SIZE:0)                                                
+==> DIRECTORY: http://10.10.136.28/feed/                                                           
+==> DIRECTORY: http://10.10.136.28/image/                                                          
+==> DIRECTORY: http://10.10.136.28/Image/                                                          
+==> DIRECTORY: http://10.10.136.28/images/                                                         
++ http://10.10.136.28/index.html (CODE:200|SIZE:1077)                                              
++ http://10.10.136.28/index.php (CODE:301|SIZE:0)                                                  
++ http://10.10.136.28/intro (CODE:200|SIZE:516314)                                                 
+==> DIRECTORY: http://10.10.136.28/js/                                                             
++ http://10.10.136.28/license (CODE:200|SIZE:309)                                                  
++ http://10.10.136.28/login (CODE:302|SIZE:0)                                                      
++ http://10.10.136.28/page1 (CODE:301|SIZE:0)                                                      
++ http://10.10.136.28/phpmyadmin (CODE:403|SIZE:94)                                                
++ http://10.10.136.28/rdf (CODE:301|SIZE:0)                                                        
++ http://10.10.136.28/readme (CODE:200|SIZE:64)                                                    
++ http://10.10.136.28/robots (CODE:200|SIZE:41)                                                    
++ http://10.10.136.28/robots.txt (CODE:200|SIZE:41)                                                
++ http://10.10.136.28/rss (CODE:301|SIZE:0)                                                        
++ http://10.10.136.28/rss2 (CODE:301|SIZE:0)                                                       
++ http://10.10.136.28/sitemap (CODE:200|SIZE:0)                                                    
++ http://10.10.136.28/sitemap.xml (CODE:200|SIZE:0)                                                
+==> DIRECTORY: http://10.10.136.28/video/                                                          
+==> DIRECTORY: http://10.10.136.28/wp-admin/                                                       
++ http://10.10.136.28/wp-config (CODE:200|SIZE:0)                                                  
+==> DIRECTORY: http://10.10.136.28/wp-content/                                                     
++ http://10.10.136.28/wp-cron (CODE:200|SIZE:0)                                                    
+==> DIRECTORY: http://10.10.136.28/wp-includes/                                                    
++ http://10.10.136.28/wp-links-opml (CODE:200|SIZE:227)                                            
++ http://10.10.136.28/wp-load (CODE:200|SIZE:0)                                                    
++ http://10.10.136.28/wp-login (CODE:200|SIZE:2664)                                                
++ http://10.10.136.28/wp-mail (CODE:500|SIZE:3064)                                                 
++ http://10.10.136.28/wp-settings (CODE:500|SIZE:0)                                                
++ http://10.10.136.28/wp-signup (CODE:302|SIZE:0)                                                  
++ http://10.10.136.28/xmlrpc (CODE:405|SIZE:42)                                                    
++ http://10.10.136.28/xmlrpc.php (CODE:405|SIZE:42)                                                
+                                                                                                   
+---- Entering directory: http://10.10.136.28/0/ ----
++ http://10.10.136.28/0/atom (CODE:301|SIZE:0)                                                     
+^C> Testing: http://10.10.136.28/0/camel
