@@ -1,0 +1,44 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Wed Mar 25 16:07:51 2020
+URL_BASE: http://10.10.93.225/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: http://10.10.93.225/ ----
++ http://10.10.93.225/index.html (CODE:200|SIZE:11321)                                             
+==> DIRECTORY: http://10.10.93.225/joomla/                                                         
+==> DIRECTORY: http://10.10.93.225/manual/                                                         
++ http://10.10.93.225/robots.txt (CODE:200|SIZE:257)                                               
++ http://10.10.93.225/server-status (CODE:403|SIZE:300)                                            
+                                                                                                   
+---- Entering directory: http://10.10.93.225/joomla/ ----
+==> DIRECTORY: http://10.10.93.225/joomla/_archive/                                                
+==> DIRECTORY: http://10.10.93.225/joomla/_database/                                               
+==> DIRECTORY: http://10.10.93.225/joomla/_files/                                                  
+==> DIRECTORY: http://10.10.93.225/joomla/_test/                                                   
+==> DIRECTORY: http://10.10.93.225/joomla/~www/                                                    
+==> DIRECTORY: http://10.10.93.225/joomla/administrator/                                           
+==> DIRECTORY: http://10.10.93.225/joomla/bin/                                                     
+==> DIRECTORY: http://10.10.93.225/joomla/build/                                                   
+==> DIRECTORY: http://10.10.93.225/joomla/cache/                                                   
+==> DIRECTORY: http://10.10.93.225/joomla/components/                                              
+==> DIRECTORY: http://10.10.93.225/joomla/images/                                                  
+==> DIRECTORY: http://10.10.93.225/joomla/includes/                                                
++ http://10.10.93.225/joomla/index.php (CODE:200|SIZE:12478)                                       
+==> DIRECTORY: http://10.10.93.225/joomla/installation/                                            
+==> DIRECTORY: http://10.10.93.225/joomla/language/                                                
+==> DIRECTORY: http://10.10.93.225/joomla/layouts/                                                 
+==> DIRECTORY: http://10.10.93.225/joomla/libraries/                                               
+==> DIRECTORY: http://10.10.93.225/joomla/media/                                                   
+==> DIRECTORY: http://10.10.93.225/joomla/modules/                                                 
+==> DIRECTORY: http://10.10.93.225/joomla/plugins/                                                 
+                                          
++ Dumping session state and Quitting.

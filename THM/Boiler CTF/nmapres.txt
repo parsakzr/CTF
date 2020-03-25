@@ -1,0 +1,24 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-03-25 15:11 EDT
+Nmap scan report for 10.10.93.225
+Host is up (0.12s latency).
+All 1000 scanned ports on 10.10.93.225 are closed
+Too many fingerprints match this host to give specific OS details
+Network Distance: 2 hops
+
+TRACEROUTE (using port 143/tcp)
+HOP RTT       ADDRESS
+1   71.56 ms  10.8.0.1
+2   122.25 ms 10.10.93.225
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.93 seconds
+
+---
+
+TCP : nmap -sT 10.10.93.225
+
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+21/tcp open  ftp
+80/tcp open  http
+
