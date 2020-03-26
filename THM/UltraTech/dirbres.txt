@@ -1,0 +1,74 @@
+Res for port 8081: 
+
+```
+	-----------------
+	DIRB v2.22    
+	By The Dark Raver
+	-----------------
+
+	START_TIME: Thu Mar 26 15:21:21 2020
+	URL_BASE: http://10.10.105.146:8081/
+	WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+	-----------------
+
+	GENERATED WORDS: 4612                                                          
+
+	---- Scanning URL: http://10.10.105.146:8081/ ----
+	+ http://10.10.105.146:8081/auth (CODE:200|SIZE:39)                                                
+	+ http://10.10.105.146:8081/ping (CODE:500|SIZE:1094)                                              
+	                                                                                                   
+	-----------------
+	END_TIME: Thu Mar 26 15:30:32 2020
+	DOWNLOADED: 4612 - FOUND: 2
+```
+
+---
+
+### Res for port 31331: 
+```
+	-----------------
+	DIRB v2.22    
+	By The Dark Raver
+	-----------------
+
+	START_TIME: Thu Mar 26 15:33:33 2020
+	URL_BASE: http://10.10.105.146:31331/
+	WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+	-----------------
+
+	GENERATED WORDS: 4612                                                          
+
+	---- Scanning URL: http://10.10.105.146:31331/ ----
+	==> DIRECTORY: http://10.10.105.146:31331/css/                                                     
+	+ http://10.10.105.146:31331/favicon.ico (CODE:200|SIZE:15086)                                     
+	==> DIRECTORY: http://10.10.105.146:31331/images/                                                  
+	+ http://10.10.105.146:31331/index.html (CODE:200|SIZE:6092)                                       
+	==> DIRECTORY: http://10.10.105.146:31331/javascript/                                              
+	==> DIRECTORY: http://10.10.105.146:31331/js/                                                      
+	+ http://10.10.105.146:31331/robots.txt (CODE:200|SIZE:53)                                         
+	+ http://10.10.105.146:31331/server-status (CODE:403|SIZE:304)                                     
+	                                                                                                   
+	---- Entering directory: http://10.10.105.146:31331/css/ ----
+	(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+	    (Use mode '-w' if you want to scan it anyway)
+	                                                                                                   
+	---- Entering directory: http://10.10.105.146:31331/images/ ----
+	(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+	    (Use mode '-w' if you want to scan it anyway)
+	                                                                                                   
+	---- Entering directory: http://10.10.105.146:31331/javascript/ ----
+	==> DIRECTORY: http://10.10.105.146:31331/javascript/jquery/                                       
+	                                                                                                   
+	---- Entering directory: http://10.10.105.146:31331/js/ ----
+	(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+	    (Use mode '-w' if you want to scan it anyway)
+	                                                                                                   
+	---- Entering directory: http://10.10.105.146:31331/javascript/jquery/ ----
+	+ http://10.10.105.146:31331/javascript/jquery/jquery (CODE:200|SIZE:268026)                       
+	                                                                                                   
+	-----------------
+	END_TIME: Thu Mar 26 16:00:02 2020
+	DOWNLOADED: 13836 - FOUND: 5
+```
