@@ -4,7 +4,7 @@ nmap -A
 
 dirb
 
-user elliot , help from writeup
+user elliot , help from writeup ( Method : hydra to login page as a dummy, check status for correct username )
 
 > wpscan --url http://10.10.136.28/wp-login.php --passwords ~/Desktop/THM/mrrobot/fsocity.dic -U elliot
 
