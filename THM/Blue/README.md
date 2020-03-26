@@ -1,3 +1,4 @@
+# TODO: need to fininsh this
 
 > nmap -A $TARGET
 > nmap -p 1-1000 $TARGET
