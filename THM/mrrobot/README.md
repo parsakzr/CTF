@@ -1,4 +1,4 @@
-nmap -A
+# \# TODO : need to finish this
 
 nmap -A
 
@@ -36,7 +36,7 @@ Candidates.#1....: promo2007 -> loserface1
 
 > ./LinEnum.sh
 
-(linenumres.txt)[/linenum.txt] :
+[linenumres.txt](https://github.com/parsakzr/CTF/THM/mrrobot/linenum.txt) :
 
 ```
 [-] SUID files:
@@ -71,4 +71,5 @@ whoami
 root
 ```
 > cd /root
+
 > cat key-3-of-3.txt
