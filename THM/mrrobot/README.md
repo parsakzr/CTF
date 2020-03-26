@@ -1,4 +1,6 @@
-# \# TODO : need to finish this
+\# lazy writeup
+
+---
 
 > nmap -A $TARGET
 
@@ -27,7 +29,7 @@ To activate the 404-page's script.
 
 > URL : http://$TARGET/nonexistingpagelmfao.html
 
-Now we have shell access.
+Now we have the shell access.
 
 ---
 
@@ -72,7 +74,7 @@ Hash.Target......: c3fcd3d76192e4007dfb496cca67e13b
 .
 ```
 
-Now We can execute shell commands with root privilages.
+It means We can execute shell commands with root privilages via nmap
 
 Older versions of nmap didn't have --script flag
 But there was an alternative mode;
