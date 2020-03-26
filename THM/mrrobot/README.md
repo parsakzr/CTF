@@ -36,7 +36,7 @@ Candidates.#1....: promo2007 -> loserface1
 
 > ./LinEnum.sh
 
-[linenumres.txt](https://github.com/parsakzr/CTF/THM/mrrobot/linenum.txt) :
+[linenumres.txt](https://github.com/parsakzr/CTF/blob/master/THM/mrrobot/linenumres.txt) :
 
 ```
 [-] SUID files:
